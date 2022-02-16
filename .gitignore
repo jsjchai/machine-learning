@@ -215,3 +215,15 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+# IDE Files #
+*.iml
+.idea
+.idea/
+.project
+.settings
+target
+.DS_Store
+.mvn
+mvnw
+mvnw.*
+
