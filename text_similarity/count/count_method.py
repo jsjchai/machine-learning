@@ -6,7 +6,7 @@ from matplotlib.font_manager import FontProperties
 mpl.rcParams['axes.unicode_minus'] = False
 my_font = FontProperties(fname='/Library/Fonts/Arial Unicode.ttf', size=12)
 
-from text_similarity.count.util import create_co_matrix, preprocess, cos_similarity, most_similar, ppmi
+from common.util import create_co_matrix, preprocess, cos_similarity, most_similar, ppmi
 
 text = "颈 4 左侧 椎弓 根区 异常 信号 结合 病史 考虑 转移瘤"
 
