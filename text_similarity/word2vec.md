@@ -9,3 +9,17 @@
 #### one-hot向量
 * 要用神经网络处理单词,需要将单词转化为固定长度的向量,一种方式是将单词转化为one-hot表示
 * 在one-hot表示中,只有一个元素是1,其他元素都是0
+### word2vec常用的神经网络模型
+* CBOW模型
+* skip-gram模型
+### CBOW模型
+> CBOW模型是根据上下文预测目标词的神经网络("目标词"是指中间的单词,它周围的单词是“上下文”)
+* 从多个单词(目标词)预测1个单词(上下文)
+![image](https://user-images.githubusercontent.com/13389058/155828334-cea5907c-f443-4877-84d2-8e87dce3192d.png)
+### skip-gram模型
+* skip-gram是反转了CBOW模型处理的上下文和目标词的模型
+* 从1个单词(目标词)预测多个单词(上下文)
+![image](https://user-images.githubusercontent.com/13389058/155828433-39f4c23d-adce-4ac6-a49b-83306d13d611.png)
+* 从单词的分布式表示的准确度来看,在大多数情况下,skip-gram模型的结果更好.特别是随着语料库规模的增大,在低频词和类推问题的性能方面,skip-gram模型往往会有更好的表现
+### GloVe方法
+* GloVe方法融合了基于推理的方法和基于计数的方法
