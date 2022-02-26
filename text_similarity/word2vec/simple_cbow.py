@@ -1,8 +1,9 @@
 # coding: utf-8
 import sys
+
 sys.path.append('..')
 import numpy as np
-from common.layers import  SoftmaxWithLoss, MatMul
+from common.layers import SoftmaxWithLoss, MatMul
 
 
 class SimpleCBOW:
@@ -29,6 +30,7 @@ class SimpleCBOW:
         # 将单词的分布式表示设置为成员变量
         self.word_vecs = W_in
 
+    # 正向传播
     def forward(self, contexts, target):
         h0 = self.in_layer0.forward(contexts[:, 0])
         h1 = self.in_layer1.forward(contexts[:, 1])
@@ -37,6 +39,7 @@ class SimpleCBOW:
         loss = self.loss_layer.forward(score, target)
         return loss
 
+    # 反向传播
     def backward(self, dout=1):
         ds = self.loss_layer.backward(dout)
         da = self.out_layer.backward(ds)
