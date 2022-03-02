@@ -48,7 +48,7 @@ print("-" * 100)
 # plt.show()
 
 #
-image_path = os.path.join("images", "california.png")
+image_path = os.path.join("images", "california.jpeg")
 california_img = mpimg.imread(image_path)
 ax = housing.plot(kind='scatter', x='longitude', y='latitude', alpha=0.4, s=housing['population'] / 100,
                   label='population', figsize=(10, 7),
