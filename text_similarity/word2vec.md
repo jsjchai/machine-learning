@@ -15,6 +15,7 @@
 ### CBOW模型
 > CBOW模型是根据上下文预测目标词的神经网络("目标词"是指中间的单词,它周围的单词是“上下文”)
 * 从多个单词(目标词)预测1个单词(上下文)
+* 忽视了上下文中单词顺序
 ![image](https://user-images.githubusercontent.com/13389058/155828334-cea5907c-f443-4877-84d2-8e87dce3192d.png)
 ### skip-gram模型
 * skip-gram是反转了CBOW模型处理的上下文和目标词的模型
