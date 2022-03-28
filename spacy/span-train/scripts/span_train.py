@@ -27,7 +27,7 @@ pattern2 = [{"LOWER": "iphone"}, {"IS_DIGIT": True}]
 matcher.add("GADGET", [pattern1, pattern2])
 docs = []
 for doc in nlp.pipe(TEXTS):
-    print([token.text for token in doc])
+    #print([token.text for token in doc])
     matches = matcher(doc)
     spans = [Span(doc, start, end, label=match_id) for match_id, start, end in matches]
     print(spans)
