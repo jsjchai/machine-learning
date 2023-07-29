@@ -16,7 +16,7 @@ nlp.tokenizer.pkuseg_update_user_dict(["杭州大厦"])
 print(nlp.tokenizer.pkuseg_seg)
 #spacy_pkuseg.pkuseg(postag=True)
 
-text = "我要和她去杭州大厦吃饭"
+text = "我骑车去杭州大厦吃饭"
 doc = nlp(text)
 
 for token in doc:
