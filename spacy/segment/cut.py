@@ -1,8 +1,5 @@
-import spacy_pkuseg
+# https://github.com/explosion/spacy-pkuseg
 from spacy.lang.zh import Chinese
-
-# pip install https://github.com/lancopku/pkuseg-python/archive/master.zip
-import pkuseg
 
 # jieba/pkuseg
 cfg = {"segmenter": "pkuseg"}
